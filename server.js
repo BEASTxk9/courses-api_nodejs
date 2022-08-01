@@ -1,4 +1,5 @@
 // import express
+require('dotenv').config();
 const express = require('express');
 // const path = require('path');
 
@@ -6,7 +7,7 @@ const express = require('express');
 const server = express();
 
 // listen for requests
-server.listen(3000);
+server.listen(process.env.PORT);
 
 
 // router
